@@ -6,7 +6,18 @@ body {
     color: #505962;
 }
 
+/*-- Nav Scrolling Offset --*/
+.offset::before {
+    height: 4rem;
+    margin-top: -4rem;
+    content: "";
+    display: block;
+}
 
+/*-- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+    padding: 1rem;
+}
 
 
 
