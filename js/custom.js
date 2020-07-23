@@ -10,3 +10,14 @@ $(document).ready(function(){
         }
     })
 });
+
+/*============= CLOSE MOBILE NAV ON CLICK =============*/
+$(document).ready(function(){
+    $(document).click(function(event){
+        var clickOver = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass('show');
+        if ( _opened === true && !clickOver.hasClass('navbar-toggler')){
+            $(".navbar-toggler").click();
+        }
+    })
+})
